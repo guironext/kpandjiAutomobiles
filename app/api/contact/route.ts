@@ -1,11 +1,9 @@
-
 import { Resend } from 'resend'
 import { render } from '@react-email/render'
-
-import React from 'react'
 import { ContactEmail } from '../../../components/ContactEmail'
+import React from 'react'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_API_KEY!)
 
 export async function POST(request: Request) {
   try {
